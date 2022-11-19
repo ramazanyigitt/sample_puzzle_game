@@ -14,14 +14,7 @@ class SplashViewModel extends BaseViewModel {
   }
 
   Future<void> initImages() async {
-    //await locator<LottieCache>().add(AppImages.spaceBackground.appLottie);
-    /*precacheImage(
-      AssetImage(AppImages.items.laserLevel1.appImage),
-      context,
-    );*/
     await Future.delayed(Duration(seconds: 1));
     Get.to(() => GameView());
-    //print('Level: ' + (await locator<GameService>().getLevel()).toRawJson());
-    //locator<GameService>().addLevelModel('Level - 1');
   }
 }
